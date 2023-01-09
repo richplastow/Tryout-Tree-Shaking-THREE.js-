@@ -22,36 +22,55 @@ Then open http://localhost:9080/src/module/index.html in a browser.
 <ul>
     <li>
         <b>src/module/index.html</b><br>
-        src/module/script.js 900 bytes<br>
-        ....../build/three.module.js 1,172,800 bytes
+        <span>src/module/script.js 900 bytes</span><br>
+        <span>....../build/three.module.js 1,172,800 bytes</span>
     </li>
     <li>
         <b>src/legacy/index.html</b> (can use file:///)<br>
-        src/legacy/script.js 741 bytes<br>
-        ....../build/three.js 1,170,793 bytes
+        <span>src/legacy/script.js 741 bytes</span><br>
+        <span>....../build/three.js 1,170,793 bytes</span><br>
+        <span>....../build/three.min.js 608,313 bytes</span>
     </li>
     <li>
         <b>build/es/index.html</b><br>
-        build/es/index.js 736,009 bytes
+        <span>build/es/index.js 735,980 bytes</span>
+    </li>
+    <li>
+        <b>build/es-3min/index.html</b><br>
+        <span>build/es-3min/index.js 717,076 bytes</span>
     </li>
     <li>
         <b>build/es-min/index.html</b><br>
-        build/es-min/index.js 405,237 bytes
+        <span>build/es-min/index.js 405,237 bytes</span>
+    </li>
+    <li>
+        <b>build/es-min-3min/index.html</b><br>
+        <span>build/es-min-3min/index.js 386,355 bytes</span>
     </li>
     <li>
         <b>build/iife/index.html</b> (can use file:///)<br>
-        build/iife/index.js 753,038 bytes
+        <span>build/iife/index.js 753,044 bytes</span>
+    </li>
+    <li>
+        <b>build/iife-3min/index.html</b> (can use file:///)<br>
+        <span>build/iife-3min/index.js 734,121 bytes</span>
     </li>
     <li>
         <b>build/iife-min/index.html</b> (can use file:///)<br>
-        build/iife-min/index.js 405,272 bytes
+        <span>build/iife-min/index.js 405,272 bytes</span>
+    </li>
+    <li>
+        <b>build/iife-min-3min/index.html</b> (can use file:///)<br>
+        <span>build/iife-min-3min/index.js 386,386 bytes</span>
     </li>
 </ul>
 <hr>
+
 <h4>Dependencies:</h4>
 <ul>
     <li>Rollup 3.9.1</li>
     <li>rollup-plugin-copy 3.4.0</li>
     <li>@rollup/plugin-terser 0.3.0</li>
+    <li>@yushijinhun/three-minifier-rollup 0.4.0</li>
     <li>THREE 0.148.0</li>
 </ul>
