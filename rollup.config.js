@@ -1,6 +1,6 @@
 // Configuration, used by `rollup -c` during `npm run build`.
 
-import copy from 'rollup-plugin-copy'
+import copy from 'rollup-plugin-copy';
 import terser from '@rollup/plugin-terser';
 
 export default {
