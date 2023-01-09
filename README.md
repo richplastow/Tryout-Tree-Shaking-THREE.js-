@@ -42,11 +42,11 @@ If that’s working, `npm run publish` to populate docs/ ready for GitHub Pages.
     </li>
     <li>
         <b>build/es-min/index.html</b><br>
-        <span>build/es-min/index.js 405,236 bytes</span>
+        <span>build/es-min/index.js 405,236 bytes (339,738 mangled (broken), 331,153 and compress.drop_console, 330,967 and compress.unsafe)</span>
     </li>
     <li>
         <b>build/es-min-3min/index.html</b><br>
-        <span>build/es-min-3min/index.js 386,354 bytes</span>
+        <span>build/es-min-3min/index.js 386,354 bytes (312,176 mangled (broken) and compress.drop_console/unsafe)</span>
     </li>
     <li>
         <b>build/iife/index.html</b> (can use file:///)<br>
@@ -58,11 +58,11 @@ If that’s working, `npm run publish` to populate docs/ ready for GitHub Pages.
     </li>
     <li>
         <b>build/iife-min/index.html</b> (can use file:///)<br>
-        <span>build/iife-min/index.js 405,272 bytes</span>
+        <span>build/iife-min/index.js 405,272 bytes (331,003 mangled (broken) and compress.drop_console/unsafe)</span>
     </li>
     <li>
         <b>build/iife-min-3min/index.html</b> (can use file:///)<br>
-        <span>build/iife-min-3min/index.js 386,385 bytes</span>
+        <span>build/iife-min-3min/index.js 386,385 bytes (386,385 mangled (broken) and compress.drop_console/unsafe)</span>
     </li>
 </ul>
 <hr>

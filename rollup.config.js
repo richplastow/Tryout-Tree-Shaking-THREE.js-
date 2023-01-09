@@ -5,9 +5,17 @@ import terser from '@rollup/plugin-terser';
 import { threeMinifier } from '@yushijinhun/three-minifier-rollup';
 
 const terserOptions = {
+    // compress: {
+    //     drop_console: true,
+    //     unsafe: true,
+    // },
     format: {
         semicolons: false,
-    }
+    },
+    // mangle: {
+    //     properties: {},
+    //     toplevel: true,
+    // },
 };
 
 export default [
