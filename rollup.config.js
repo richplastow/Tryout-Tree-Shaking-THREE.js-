@@ -4,6 +4,12 @@ import copy from 'rollup-plugin-copy';
 import terser from '@rollup/plugin-terser';
 import { threeMinifier } from '@yushijinhun/three-minifier-rollup';
 
+const terserOptions = {
+    format: {
+        semicolons: false,
+    }
+};
+
 export default [
 {
     input: 'src/module/script.js',
@@ -15,7 +21,7 @@ export default [
         {
             format: 'es',
             file: 'build/es-min/script.js',
-            plugins: [terser()],
+            plugins: [terser(terserOptions)],
         },
         {
             format: 'iife',
@@ -24,7 +30,7 @@ export default [
         {
             format: 'iife',
             file: 'build/iife-min/script.js',
-            plugins: [terser()],
+            plugins: [terser(terserOptions)],
         },
     ],
     plugins: [
@@ -64,15 +70,6 @@ export default [
                     'Immediately Invoked Function Expression, Terser Minified')
                 .replace(' type="module"', '')
           },
-          {
-            src: 'src/module/index.html',
-            dest: 'build/iife-3min',
-            transform: (html) => html
-                .toString().replace(
-                    'Source, ES6 Modules',
-                    'Immediately Invoked Function Expression, THREE Minifier')
-                .replace(' type="module"', '')
-          },
         ]
       })
     ],
@@ -90,7 +87,7 @@ export default [
         {
             format: 'es',
             file: 'build/es-min-3min/script.js',
-            plugins: [terser()],
+            plugins: [terser(terserOptions)],
         },
         {
             format: 'iife',
@@ -100,7 +97,7 @@ export default [
         {
             format: 'iife',
             file: 'build/iife-min-3min/script.js',
-            plugins: [terser()],
+            plugins: [terser(terserOptions)],
         },
     ],
     plugins: [

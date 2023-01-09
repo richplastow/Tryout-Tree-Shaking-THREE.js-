@@ -42,11 +42,11 @@ If that’s working, `npm run publish` to populate docs/ ready for GitHub Pages.
     </li>
     <li>
         <b>build/es-min/index.html</b><br>
-        <span>build/es-min/index.js 405,237 bytes</span>
+        <span>build/es-min/index.js 405,236 bytes</span>
     </li>
     <li>
         <b>build/es-min-3min/index.html</b><br>
-        <span>build/es-min-3min/index.js 386,355 bytes</span>
+        <span>build/es-min-3min/index.js 386,354 bytes</span>
     </li>
     <li>
         <b>build/iife/index.html</b> (can use file:///)<br>
@@ -62,7 +62,7 @@ If that’s working, `npm run publish` to populate docs/ ready for GitHub Pages.
     </li>
     <li>
         <b>build/iife-min-3min/index.html</b> (can use file:///)<br>
-        <span>build/iife-min-3min/index.js 386,386 bytes</span>
+        <span>build/iife-min-3min/index.js 386,385 bytes</span>
     </li>
 </ul>
 <hr>
