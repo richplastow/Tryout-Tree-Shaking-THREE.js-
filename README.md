@@ -16,6 +16,7 @@ static-server
 
 Then open http://localhost:9080/src/module/index.html in a browser.
 
+If that’s working, `npm run publish` to populate docs/ ready for GitHub Pages.
 
 ## Builds:
 

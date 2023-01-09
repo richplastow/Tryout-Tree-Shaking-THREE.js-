@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "rollup -c",
+    "publish": "rm -rf docs; mkdir -p docs/node_modules/three/build; mv build docs/; cp -R src docs/src; cp node_modules/three/build/{three.module.js,three.js} docs/node_modules/three/build/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Rich Plastow",
