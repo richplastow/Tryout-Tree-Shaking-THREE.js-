@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg
+        xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text
+        y=%22.9em%22 font-size=%2290%22>🌳</text></svg>">
+    <title>Tryout Tree Shaking THREE.js 🌳</title>
+    <style>
+        body { background:#021; color:#efd; font:20px/1.5 Arial }
+        a { color:#9df }
+        canvas { position:fixed; top:0; left:0; z-index:-1 }
+    </style>
+</head>
+<body>
+    <h1>Tryout Tree Shaking THREE.js 🌳</h1>
+    <p>Work on THREE in 2022 made it more tree-shakable... let's try that out.</p>
+    <hr>
+    <h4>This Build: Source, ES6 Modules</h4>
+    <h4>Other Builds:</h4>
+    <ul>
+        <li>
+            <a href="../../src/module/index.html">src/module/index.html</a><br>
+            <span>src/module/script.js 900 bytes</span><br>
+            <span>....../build/three.module.js 1,172,800 bytes</span>
+        </li>
+        <li>
+            <a href="../../src/legacy/index.html">src/legacy/index.html</a> (can use file:///)<br>
+            <span>src/legacy/script.js 741 bytes</span><br>
+            <span>....../build/three.js 1,170,793 bytes</span>
+        </li>
+        <li>
+            <a href="../../build/es/index.html">build/es/index.html</a><br>
+            <span>build/es/index.js 736,009 bytes</span>
+        </li>
+        <li>
+            <a href="../../build/es-min/index.html">build/es-min/index.html</a><br>
+            <span>build/es-min/index.js 405,237 bytes</span>
+        </li>
+        <li>
+            <a href="../../build/iife/index.html">build/iife/index.html</a> (can use file:///)<br>
+            <span>build/iife/index.js 753,038 bytes</span>
+        </li>
+        <li>
+            <a href="../../build/iife-min/index.html">build/iife-min/index.html</a> (can use file:///)<br>
+            <span>build/iife-min/index.js 405,272 bytes</span>
+        </li>
+    </ul>
+    <hr>
+    <h4>Dependencies:</h4>
+    <ul>
+        <li>Rollup 3.9.1</li>
+        <li>rollup-plugin-copy 3.4.0</li>
+        <li>@rollup/plugin-terser 0.3.0</li>
+        <li>THREE 0.148.0</li>
+    </ul>
+
+    <script type="module" src="./script.js"></script>
+
+</body>
+</html>

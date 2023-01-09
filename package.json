@@ -1,0 +1,18 @@
+{
+  "name": "20220109-tryout-tree-shaking-threejs",
+  "version": "1.0.0",
+  "description": "Work on THREE in 2022 made it more tree-shakable... let's try that out",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rich Plastow",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-terser": "0.3.0",
+    "rollup": "3.9.1",
+    "rollup-plugin-copy": "3.4.0",
+    "three": "0.148.0"
+  }
+}
