@@ -28,7 +28,6 @@ export default [
         },
     ],
     plugins: [
-      threeMinifier(), // plugin must be on the FIRST line
       copy({
         targets: [
           {
